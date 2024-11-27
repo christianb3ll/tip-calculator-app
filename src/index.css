@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('assets/fonts/space-mono-v14-latin-700.woff2') format('woff2');
+    }
+
+    a {
+        @apply underline;
+        @apply text-very-dark-cyan;
+    }
+
+    a:hover {
+        @apply opacity-80;
+    }
+
+    body {
+        @apply font-space-mono;
+    }
+  }
