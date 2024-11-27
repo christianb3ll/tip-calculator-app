@@ -10,7 +10,6 @@ function Calculator() {
     useEffect(() => {
         // check each value has been filled
         if(formData.bill != '' && formData.tip != '' && formData.people != ''){
-            console.log('filled');
             // calculate tip amount based on percentage and divide amongst number of people
             const tipAmount = Number(((formData.bill / 100) * formData.tip) / formData.people).toFixed(2);
 
@@ -45,8 +44,6 @@ function Calculator() {
     };
 
     const handleClick = (event) => {
-        console.log("clicked" + event.target.value);
-
         const tipAmount = String(event.target.value).replace('%', '');
 
         setFormData({
@@ -59,8 +56,6 @@ function Calculator() {
     };
 
     const Reset = (event) => {
-        console.log('reset');
-
         setFormData(formInitialState);
         setResults(resultsInitialState);
     };
