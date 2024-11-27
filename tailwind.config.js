@@ -25,8 +25,8 @@ export default {
       "lg": "1.563rem"
     },
     backgroundImage: {
-      "dollar-icon": "url(src/assets/icon-dollar.svg)",
-      "person-icon": "url(src/assets/icon-person.svg)"
+      "dollar-icon": "url(../assets/icon-dollar.svg)",
+      "person-icon": "url(../assets/icon-person.svg)"
     },
     dropShadow: {
       "body": "0 32px 43px rgba(79, 166, 175, 0.20)"
